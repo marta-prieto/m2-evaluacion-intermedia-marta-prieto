@@ -4,7 +4,7 @@
 }
 
 .container {
-    background-color: rgb(201, 197, 197);
+    background-color: rgb(144, 192, 199);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,11 +30,13 @@
     justify-content: space-around;
     padding: 10px;
     font-size: 60px;
+    color: rgb(25, 78, 131)
 }
 
 .title {
     font-size: 30px;
     margin-bottom: 20px;
+    color: rgb(25, 78, 131)
 }
 
 .try__container {
@@ -59,10 +61,10 @@
 
 .app__counter {
     font-size: 30px;
-    width: 90%;
+    width: 50%;
     height: 50px;
-    border:solid 2px blue;
-    color:blue;
+    border:solid 2px rgb(25, 78, 131);
+    color: rgb(25, 78, 131);
     display: flex;
     justify-content: center;
     align-items: center;
