@@ -1,7 +1,7 @@
 'use strict';
 
 
-const field = document.querySelector('input');
+const field = document.querySelector('.input');
 const containerCounter = document.querySelector('.zero');
 const numberZero = document.querySelector('.app__counter');
 const button = document.querySelector('.btn');
@@ -13,9 +13,7 @@ function getRandomNumber(max) {
     return Math.ceil(Math.random() * max)
 }
 
-const myRandomNumber = getRandomNumber(100);
-console.log(`Mi número aleatorio es ${myRandomNumber}`);
-
+let myRandomNumber = getRandomNumber(100);
 
 function tryGame() {
     const userNumber = parseInt(field.value);
@@ -41,16 +39,16 @@ function tryGame() {
 
 }
 
-
 button.addEventListener('click', tryGame);
 
-
-
-/* const resetButton = document.querySelector('.js__button');
+const resetButton = document.querySelector('.js__button');
 
 function resetInput() {
-    numberZero.innerHTML = defaultElement.value;
+    counter = 0;
+    containerCounter.innerHTML = counter;
+    field.value = '';
+    myRandomNumber = getRandomNumber(100);
 }
 
-resetButton.addEventListener('click', resetInput); */
+resetButton.addEventListener('click', resetInput);
 
